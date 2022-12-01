@@ -1,0 +1,542 @@
+{
+	"info": {
+		"_postman_id": "79ae98d4-06f5-42fd-9731-f524f724b56f",
+		"name": "Prueba tienda Correa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24255982"
+	},
+	"item": [
+		{
+			"name": "loginOK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "Ncorrea",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ncormor",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/comestiblesCorrea/LoginServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comestiblesCorrea",
+						"LoginServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginWrongPassword&UserName",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "Ncormor",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "imdow",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/comestiblesCorrea/LoginServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comestiblesCorrea",
+						"LoginServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginwithWrongPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "Ncorrea",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "novalida",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/comestiblesCorrea/LoginServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comestiblesCorrea",
+						"LoginServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginWrongUsername",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "Ncormor",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ncormor",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/comestiblesCorrea/LoginServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comestiblesCorrea",
+						"LoginServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginWithEmptyValues",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/comestiblesCorrea/LoginServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comestiblesCorrea",
+						"LoginServlet"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginWithNotValidUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "pepe",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "pepe",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/comestiblesCorrea/LoginServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comestiblesCorrea",
+						"LoginServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signInWithExistingUsername",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "Ncorrea",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "nombre1",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "apellido1",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1980-11-08",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "M",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/comestiblesCorrea/SignInServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comestiblesCorrea",
+						"SignInServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signInwithCorrectParameters",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "newUser",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "contrasena1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "usuarioprueba",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "usuarioprueba",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1980-11-08",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "M",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/comestiblesCorrea/SignInServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comestiblesCorrea",
+						"SignInServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signInwithWrongParameter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "newUser2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "contrasena1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "usuarioprueba",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "usuarioprueba",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1980-11-08",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "F",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/comestiblesCorrea/SignInServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comestiblesCorrea",
+						"SignInServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signInwithEmptyParameters",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/comestiblesCorrea/SignInServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comestiblesCorrea",
+						"SignInServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addProductInAdminSession",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Evaporate Milk",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Canned Evaporate Milk ",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2.99",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/comestiblesCorrea/AddProductServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comestiblesCorrea",
+						"AddProductServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addProductWithoutSession",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Evaporate Milk",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Canned Evaporate Milk ",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2.99",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/comestiblesCorrea/AddProductServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comestiblesCorrea",
+						"AddProductServlet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+body{
+	height: 100vh;
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	background-color: #FEF9E7; 
+}
+
+a {
+	text-decoration: none;
+ }
+ 
+.site_wrap{
+	background-color: #FEF9E7; 
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 2fr;
+    grid-template-rows:0.2fr 0.1fr 1fr 0.2fr 0.1fr;
+    grid-template-areas: 
+    "title title"
+    "session delbut"
+    "table table"
+    "pay cancel"
+    "footer footer";
+	
+}
+
+.title{
+	display:grid;
+	grid-area: title;
+	text-align: center;
+	background-color: #FEF9E7; 
+	color: black;
+	font-size: 1.5em;
+}
+
+.session{
+	display:grid;
+	grid-area: session;
+	text-align: center;
+	background-color: #FEF9E7; 
+	color: black;
+}
+
+.session h1{
+	text-align: left;
+	margin-left: 3%;
+} 
+
+.delbut{
+	display:grid;
+	grid-area: delbut;
+	text-align: center;
+	background-color: #FEF9E7; 
+	color: black;
+	margin-bottom: 10px;
+	margin-right:20px;
+}
+
+.delbut .button{
+	float:right;
+}
+
+.table{
+	display:grid;
+	grid-area: table;
+	text-align: center;
+	background-color: #FEF9E7; 
+	color: black;
+	margin: 20px;
+}
+
+.table tr td{
+	border: solid 1px;
+	border-collapse:collapse;
+	border-color: black;
+	height: 35px;
+}
+
+.table tr:first-child {
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color:#D7DBDD;
+}
+
+.table tr:last-child {
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color:#D7DBDD;
+}
+
+.pay{
+	display:grid;
+	grid-area: pay;
+	text-align: center;
+	background-color: #FEF9E7; 
+	color: black;
+	margin-bottom: 10px;
+	margin-left:20px;
+	
+}
+
+.cancel{
+	display:grid;
+	grid-area: cancel;
+	text-align: center;
+	background-color: #FEF9E7; 
+	color: black;
+	margin-bottom: 10px;
+	margin-right:20px;
+}
+
+.footer{
+	display: grid;
+	grid-area: footer;
+	text-align: center;
+	background-color: #A9CCE3;
+}
+
+.footer p{
+	 vertical-align: center;
+}
+
+.button {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background:  #A9CCE3;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.button:hover {
+	background-color:#C39BD3;
+}
+
+input {
+	margin-right: 5px;
+	border-radius: 5px;
+}
+
+input:focus{
+	background-color: #E5E8E8;
+}
+
+form button{
+	border-radius: 5px;
+	background-color: #A9CCE3;
+	color: black;
+}
+
+form button:hover{
+	background-color:#C39BD3;
+}

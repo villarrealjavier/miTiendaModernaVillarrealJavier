@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body{
+	height: 100vh;
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: oblique;
+	
+}
+
+.site_wrap{
+	background-color: #FEF9E7; 
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 0.5fr 0.2fr;
+    grid-template-areas: 
+    "title"
+    "success"
+	"back"
+    "footer";
+}
+
+.title{
+	display: grid;
+	grid-area: title;
+	text-align: center;
+	background-color: #FEF9E7; 
+	color: black;
+	font-size: 2em;
+}
+
+.title h1{
+	padding-top: 3%;
+}
+
+.success{
+	display: grid;
+	grid-area: success;
+	text-align: center;
+	background-color: #FEF9E7; 
+	color: black;
+	font-size: 2em;
+}
+
+.success h3{
+    padding-top: 3%;
+}
+
+.back{
+	display: grid;
+	grid-area: back;
+	background-color:#FEF9E7;
+
+}
+
+.back a{
+  	color:black;
+    padding: 10px 20px;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+    font-size: 2em;
+    text-align: center;
+}
+
+.footer{
+	display: grid;
+	grid-area: footer;
+	text-align: center;
+	background-color: #A9CCE3;
+}
+
+.footer p{
+	 padding-top: 3%;
+}
